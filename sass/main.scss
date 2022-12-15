@@ -1,0 +1,27 @@
+@import './utils/variables';
+@import './utils/mixin';
+
+@import './base/reset';
+
+@import './utils/hide';
+
+@import './components/container';
+@import './components/modal';
+@import './components/logo';
+@import './components/headers';
+@import './components/filter-button';
+@import './components/soc-network';
+
+@import './layouts/header';
+@import './layouts/main-signup';
+
+@import './layouts/hero';
+@import './layouts/benefit';
+@import './layouts/tasks';
+
+@import './layouts/staff';
+@import './layouts/clients';
+
+@import './layouts/portfolio';
+
+@import './layouts/footer';
