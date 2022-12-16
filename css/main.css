@@ -50,20 +50,19 @@ ul {
 }
 
 .container {
-  width: 480px;
-  padding: 0;
+  max-width: 480px;
+  padding: 0 15px;
   margin: 0 auto;
-  /* outline: 1px solid tomato; */
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 768px;
-  }
+  outline: 1px solid tomato;
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 1200px;
-    padding: 0 15px;
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
   }
 }
 
@@ -424,6 +423,7 @@ ul {
   background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/webstudio-background_0.jpg");
   background-size: cover;
+  margin-bottom: 60px;
 }
 
 .hero__title {
@@ -442,7 +442,7 @@ ul {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: calc 1.875;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   align-items: center;
   text-align: center;
@@ -465,13 +465,34 @@ ul {
   padding: 0;
 }
 
+.benefit__list {
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .benefit__item {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .benefit__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefit__item {
+    width: 270px;
+  }
+}
+
+.benefit__icon {
+  width: 100%;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 120px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   border-radius: 4px;
 }
 

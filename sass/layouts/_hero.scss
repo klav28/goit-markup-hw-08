@@ -3,6 +3,7 @@
   background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/webstudio-background_0.jpg');
   background-size: cover;
+  margin-bottom: 60px;
 //   max-width: 1600px;
 //   margin: 0 auto;
 }
@@ -22,7 +23,7 @@
 .hero__button {
   font-family: inherit;
 
-  @include font(700, 16px, calc (30/16), 0.06em);
+  @include font(700, 16px, calc(30 / 16), 0.06em);
 
   align-items: center;
   text-align: center;
