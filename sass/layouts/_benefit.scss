@@ -1,9 +1,12 @@
 .benefit {
-  padding: 0;
+  padding: 60px 0;
+
+  @include desktop {
+    padding: 94px 0;
+  }
 }
 
 .benefit__list {
-  margin-bottom: 60px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;

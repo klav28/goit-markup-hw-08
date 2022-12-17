@@ -1,5 +1,10 @@
 .tasks {
-    padding-bottom: 94px;
+    display: none;
+
+    @include desktop {
+        padding-bottom: 94px;        
+        display: block;
+    }
 }
 
 .tasks__list {
