@@ -160,7 +160,7 @@
     display: none;
   }
 
-    transition: fill var(--t-duration) var(--t-transition);
+  transition: fill var(--t-duration) var(--t-transition);
 
   &:hover,
   &:focus {
@@ -183,7 +183,6 @@
   &:focus {
     fill: var(--color-accent);
   }
-
 }
 .mobile-menu__list {
 }
@@ -224,21 +223,20 @@
   &:focus {
     color: var(--color-accent);
   }
-
 }
 
 .mobile-menu-email__link {
   @include font(500, 24px, calc(28 / 24), 0.02em);
   color: var(--color-primary-middle);
   text-decoration: none;
-  cursor: pointer;  
+  cursor: pointer;
 
   transition: color var(--t-duration) var(--t-transition);
 
   &:hover,
   &:focus {
     color: var(--color-accent);
-  }  
+  }
 }
 
 .mobile-menu-soc {
@@ -251,18 +249,18 @@
 }
 
 .mobile-menu-soc__item:not(:last-child)::after {
-  content: "";
+  content: '';
   width: 1px;
   height: 22px;
   background-color: rgba(33, 33, 33, 0.2);
   position: absolute;
-  transform: translateX(10px)
+  transform: translateX(10px);
 }
 
 .mobile-menu-soc__link {
   @include font(500, 18px, calc(22 / 18), 0.02em);
   text-decoration: none;
-  cursor: pointer;  
+  cursor: pointer;
   color: var(--color-primary-dark);
 
   transition: color var(--t-duration) var(--t-transition);
@@ -270,5 +268,5 @@
   &:hover,
   &:focus {
     color: var(--color-accent);
-  }  
+  }
 }
