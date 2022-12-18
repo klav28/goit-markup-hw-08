@@ -22,6 +22,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  padding-bottom: 60px;
+
+  @include desktop {
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio-card {

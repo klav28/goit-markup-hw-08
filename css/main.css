@@ -973,6 +973,12 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio-card {
