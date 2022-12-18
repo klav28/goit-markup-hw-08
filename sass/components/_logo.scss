@@ -1,10 +1,18 @@
 .logo {
     font-family: 'Raleway', sans-serif;
 
-    @include font(700, 26px, 1.192, null);
+    @include font(700, 24px, calc(28 / 24), null);
 
     text-decoration: none;
     margin-right: 93px;
+
+    @include tablett {
+        margin-right: 88px;
+    }    
+
+    @include desktop {
+        @include font(700, 26px, calc(30.5 / 26), null);
+    }
 
     padding-top: 15px;
     padding-bottom: 15px;

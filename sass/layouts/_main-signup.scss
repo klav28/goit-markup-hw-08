@@ -82,6 +82,7 @@
 .main-signup-confirm {
     display: inline-flex;
     align-items: center;
+    @include font(null, 12px, calc(14 / 12), 0.03em);    
     color: var(--color-primary-middle);
     margin-left: 13px;
 }

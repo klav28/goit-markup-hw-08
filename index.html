@@ -21,7 +21,9 @@
   <body>
     <header class="header-bloque">
       <div class="header container">
-        <a href="./index.html" class="logo logo-dark-color"><span class="logo-accent">Web</span>Studio</a>
+        <div class="header__item">
+          <a href="./index.html" class="logo logo-dark-color"><span class="logo-accent">Web</span>Studio</a>
+        </div>
         <nav>
           <ul class="header-nav">
             <li><a href="./index.html" class="header-nav-link header-current-link">Студія</a></li>
@@ -29,24 +31,56 @@
             <li><a href="#" class="header-nav-link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="header-nav contacts">
-          <li>
-            <a href="mailto:info@devstudio.com" class="header-contacts-link">
-              <svg class="header-icon-contact" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="header-contacts-link">
-              <svg class="header-icon-contact" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +380 96 111 11 11
-            </a>
-          </li>
-        </ul>
+        <div class="header__item--contacts">
+          <ul class="header-nav contacts">
+            <li>
+              <a href="mailto:info@devstudio.com" class="header-contacts-link">
+                <svg class="header-icon-contact" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="header-contacts-link">
+                <svg class="header-icon-contact" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +380 96 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button type="button" data-menu-open class="mobile-menu-open">O</button>
+      </div>
+      <div data-menu class="mobile-menu is-hidden">
+        <div class="container">
+          <button type="button" data-menu-close class="mobile-menu-close">X</button>
+          <div class="mobile-menu-top">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link">Студія</a></li>
+              <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a></li>
+              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Контакти</a></li>
+            </ul>
+          </div>
+          <div class="mobile-menu-bottom">
+            <ul class="mobile-menu-contacts">
+              <li class="mobile-menu-phone__item">
+                <a href="tel:+380961111111" class="mobile-menu-phone__link"> +380 96 111 11 11 </a>
+              </li>
+              <li class="mobile-menu-email__item">
+                <a href="mailto:info@devstudio.com" class="mobile-menu-email__link"> info@devstudio.com </a>
+              </li>
+            </ul>
+
+            <ul class="mobile-menu-soc">
+              <li class="mobile-menu-soc__item"><a href="#" class="mobile-menu-soc__link">instagram</a></li>
+              <li class="mobile-menu-soc__item"><a href="#" class="mobile-menu-soc__link">twitter</a></li>
+              <li class="mobile-menu-soc__item"><a href="#" class="mobile-menu-soc__link">facebook</a></li>
+              <li class="mobile-menu-soc__item"><a href="#" class="mobile-menu-soc__link">linkedin</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -126,49 +160,49 @@
                     <use href="./images/icons.svg#icon-benefit1"></use>
                   </svg>
                 </div>
-              <h3 class="benefit__name">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="benefit__detail">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                <h3 class="benefit__name">УВАГА ДО ДЕТАЛЕЙ</h3>
+                <p class="benefit__detail">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
               </div>
             </li>
             <li>
               <div class="benefit__item">
                 <div class="benefit__icon">
-                <svg width="70" height="70">
-                  <use href="./images/icons.svg#icon-benefit2"></use>
-                </svg>
+                  <svg width="70" height="70">
+                    <use href="./images/icons.svg#icon-benefit2"></use>
+                  </svg>
+                </div>
+                <h3 class="benefit__name">ПУНКТУАЛЬНІСТЬ</h3>
+                <p class="benefit__detail">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
               </div>
-              <h3 class="benefit__name">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="benefit__detail">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-            </div>
-          </li>
+            </li>
             <li>
               <div class="benefit__item">
                 <div class="benefit__icon">
-                <svg width="70" height="70">
-                  <use href="./images/icons.svg#icon-benefit3"></use>
-                </svg>
+                  <svg width="70" height="70">
+                    <use href="./images/icons.svg#icon-benefit3"></use>
+                  </svg>
+                </div>
+                <h3 class="benefit__name">ПЛАНУВАННЯ</h3>
+                <p class="benefit__detail">Так само консультація з широким активом значною мірою зумовлює.</p>
               </div>
-              <h3 class="benefit__name">ПЛАНУВАННЯ</h3>
-              <p class="benefit__detail">Так само консультація з широким активом значною мірою зумовлює.</p>
-            </div>
-          </li>
+            </li>
             <li>
               <div class="benefit__item">
                 <div class="benefit__icon">
-                <svg width="70" height="70">
-                  <use href="./images/icons.svg#icon-benefit4"></use>
-                </svg>
+                  <svg width="70" height="70">
+                    <use href="./images/icons.svg#icon-benefit4"></use>
+                  </svg>
+                </div>
+                <h3 class="benefit__name">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <p class="benefit__detail">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
               </div>
-              <h3 class="benefit__name">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="benefit__detail">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-            </div>
-          </li>
+            </li>
           </ul>
         </div>
       </section>
 
       <!-- What We Do -->
-       <section class="tasks">
+      <section class="tasks">
         <div class="container">
           <h2 class="section-header">Чим ми займаємося</h2>
           <ul class="tasks__list">
@@ -194,12 +228,18 @@
         </div>
       </section>
 
-<!--      <section class="staff">
+      <section class="staff">
         <div class="container">
           <h2 class="section-header">Наша команда</h2>
           <ul class="staff-list">
             <li class="staff-list__item">
-              <img src="./images/demiyanenko-i.jpg" alt="Ігор Дем'яненко" width="450px" class="staff-list__image" />
+              <picture>
+                <source srcset="./images/staff/d_demianenko_1x.jpg 1x, ./images/staff/d_demianenko_2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/staff/t_demianenko_1x.jpg 1x, ./images/staff/t_demianenko_2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/staff/m_demianenko_1x.jpg 1x, ./images/staff/m_demianenko_2x.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/staff/m_demianenko_1x.jpg" alt="Ігор Дем'яненко" width="450px" class="staff-list__image" />
+              </picture>
+
               <div class="staff-list__card">
                 <h3 class="staff-list__name">Ігор Дем'яненко</h3>
                 <p class="staff-list__jobtitle">Product Designer</p>
@@ -236,7 +276,12 @@
               </div>
             </li>
             <li class="staff-list__item">
-              <img src="./images/repina-o.jpg" alt="Ольга Рєпіна" width="270" class="card-image" />
+              <picture>
+                <source srcset="./images/staff/d_repina_1x.jpg 1x, ./images/staff/d_repina_2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/staff/t_repina_1x.jpg 1x, ./images/staff/t_repina_2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/staff/m_repina_1x.jpg 1x, ./images/staff/m_repina_2x.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/staff/m_repina_1x.jpg" alt="Ольга Рєпіна" width="450px" class="staff-list__image" />
+              </picture>
               <div class="staff-list__card">
                 <h3 class="staff-list__name">Ольга Рєпіна</h3>
                 <p class="staff-list__jobtitle">Frontend Developer</p>
@@ -273,7 +318,12 @@
               </div>
             </li>
             <li class="staff-list__item">
-              <img src="./images/tarasov-m.jpg" alt="Микола Тарасов" width="270" class="card-image" />
+              <picture>
+                <source srcset="./images/staff/d_tarasov_1x.jpg 1x, ./images/staff/d_tarasov_2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/staff/t_tarasov_1x.jpg 1x, ./images/staff/t_tarasov_2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/staff/m_tarasov_1x.jpg 1x, ./images/staff/m_tarasov_2x.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/staff/m_tarasov_1x.jpg" alt="Микола Тарасов" width="450px" class="staff-list__image" />
+              </picture>
               <div class="staff-list__card">
                 <h3 class="staff-list__name">Микола Тарасов</h3>
                 <p class="staff-list__jobtitle">Marketing</p>
@@ -310,7 +360,12 @@
               </div>
             </li>
             <li class="staff-list__item">
-              <img src="./images/ermakov-m.jpg" alt="Михайло Єрмаков" width="270" class="card-image" />
+              <picture>
+                <source srcset="./images/staff/d_ermakov_1x.jpg 1x, ./images/staff/d_ermakov_2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/staff/t_ermakov_1x.jpg 1x, ./images/staff/t_ermakov_2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/staff/m_ermakov_1x.jpg 1x, ./images/staff/m_ermakov_2x.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/staff/m_ermakov_1x.jpg" alt="Михайло Єрмаков" width="450px" class="staff-list__image" />
+              </picture>
               <div class="staff-list__card">
                 <h3 class="staff-list__name">Михайло Єрмаков</h3>
                 <p class="staff-list__jobtitle">UI Designer</p>
@@ -350,9 +405,8 @@
         </div>
       </section>
     </main>
--->
 
-   <section class="clients">
+    <section class="clients">
       <div class="container">
         <h2 class="section-header">Постійні клієнти</h2>
         <ul class="client-list">
@@ -462,8 +516,10 @@
             <button type="submit" class="footer-signup-button">Підписатися</button>
           </form>
         </div>
+      </div>
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

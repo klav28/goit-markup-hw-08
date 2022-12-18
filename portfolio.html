@@ -17,10 +17,13 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
+
   <body>
     <header class="header-bloque">
       <div class="header container">
-        <a href="./index.html" class="logo logo-dark-color"><span class="logo-accent">Web</span>Studio</a>
+        <div class="header__item">
+          <a href="./index.html" class="logo logo-dark-color"><span class="logo-accent">Web</span>Studio</a>
+        </div>
         <nav>
           <ul class="header-nav">
             <li><a href="./index.html" class="header-nav-link">Студія</a></li>
@@ -28,6 +31,7 @@
             <li><a href="#" class="header-nav-link">Контакти</a></li>
           </ul>
         </nav>
+        <div class="header__item--contacts">
         <ul class="header-nav contacts">
           <li>
             <a href="mailto:info@devstudio.com" class="header-contacts-link">
@@ -46,11 +50,12 @@
             </a>
           </li>
         </ul>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="portfolio">
+      <section>
         <div class="container">
           <h2 class="hide">Портфоліо</h2>
           <ul class="filter-buttons">
