@@ -683,6 +683,7 @@ ul {
   .hero {
     max-width: 1600px;
     padding: 200px 0;
+    margin: 0 auto;
   }
 }
 
