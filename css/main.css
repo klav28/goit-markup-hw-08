@@ -37,6 +37,10 @@ ul {
   margin: 0;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .hide {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -298,12 +302,15 @@ ul {
     flex-wrap: wrap;
     gap: 0;
     font-size: 12px;
+    margin-left: 90px;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts {
     flex-wrap: nowrap;
     font-size: 14px;
+    gap: 40px;
+    margin-left: 0;
   }
 }
 
@@ -349,7 +356,6 @@ ul {
 @media screen and (min-width: 768px) {
   .header-contacts-link {
     padding: 5px 0;
-    margin-left: 90px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -430,9 +436,9 @@ ul {
   letter-spacing: 0.02em;
   color: var(--color-primary-dark);
   text-decoration: none;
-  transition: color var(--t-duration) var(--t-transition);
 }
-.mobile-menu__link:hover, .mobile-menu__link:focus {
+
+.mobile-menu__link-current {
   color: var(--color-accent);
 }
 
@@ -449,13 +455,13 @@ ul {
   font-size: 34px;
   line-height: 1.1717647059;
   letter-spacing: 0.02em;
-  color: var(--color-primary-middle);
+  color: var(--color-accent);
   text-decoration: none;
   cursor: pointer;
   transition: color var(--t-duration) var(--t-transition);
 }
 .mobile-menu-phone__link:hover, .mobile-menu-phone__link:focus {
-  color: var(--color-accent);
+  color: var(--color-primary-middle);
 }
 
 .mobile-menu-email__link {
@@ -497,10 +503,6 @@ ul {
   letter-spacing: 0.02em;
   text-decoration: none;
   cursor: pointer;
-  color: var(--color-primary-dark);
-  transition: color var(--t-duration) var(--t-transition);
-}
-.mobile-menu-soc__link:hover, .mobile-menu-soc__link:focus {
   color: var(--color-accent);
 }
 
@@ -642,8 +644,8 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.hero__container {
-  padding: 118px 60px;
+.hero {
+  padding: 118px 0;
   background-color: #c4c4c4;
   background-repeat: no-repeat;
   background-position: center;
@@ -651,34 +653,34 @@ ul {
   background-image: var(--hero-gradient), url("../images/webstudio-background_mobile.jpg");
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero__container {
+  .hero {
     background-image: var(--hero-gradient), url("../images/webstudio-background_mobile_2x.jpg");
   }
 }
 @media screen and (min-width: 480px) {
-  .hero__container {
+  .hero {
     background-image: var(--hero-gradient), url("../images/webstudio-background_tablett.jpg");
   }
 }
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
-  .hero__container {
+  .hero {
     background-image: var(--hero-gradient), url("../images/webstudio-background_tablett_2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
-  .hero__container {
+  .hero {
     max-width: 1200px;
     background-image: var(--hero-gradient), url("../images/webstudio-background.jpg");
     padding: 118px 0;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero__container {
+  .hero {
     background-image: var(--hero-gradient), url("../images/webstudio-background_2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero__container {
+  .hero {
     max-width: 1600px;
     padding: 200px 0;
   }
@@ -724,10 +726,15 @@ ul {
   background-color: var(--color-accent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding: 10px 32px;
+  padding: 10px 24px;
   display: block;
   margin: 0 auto;
   transition: background-color var(--t-duration) var(--t-transition);
+}
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    padding: 10px 32px;
+  }
 }
 .hero__button:hover {
   background-color: var(--color-accent2);
@@ -978,7 +985,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .portfolio-card {
-    width: 270px;
+    width: 370px;
   }
 }
 

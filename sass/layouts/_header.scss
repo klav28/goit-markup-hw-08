@@ -54,10 +54,13 @@
     flex-wrap: wrap;
     gap: 0;
     font-size: 12px;
+    margin-left: 90px;    
   }
   @include desktop {
     flex-wrap: nowrap;
     font-size: 14px;
+    gap: 40px;
+    margin-left: 0;
   }
 }
 
@@ -106,7 +109,6 @@
 
   @include tablett {
     padding: 5px 0;
-    margin-left: 90px;
   }
 
   @include desktop {
@@ -195,12 +197,17 @@
   color: var(--color-primary-dark);
   text-decoration: none;
 
-  transition: color var(--t-duration) var(--t-transition);
+  // transition: color var(--t-duration) var(--t-transition);
 
-  &:hover,
-  &:focus {
-    color: var(--color-accent);
-  }
+  // &:hover,
+  // &:focus,
+  // &:active {
+  //   color: var(--color-accent);
+  // }
+}
+
+.mobile-menu__link-current {
+  color: var(--color-accent);
 }
 
 .mobile-menu-phone__item {
@@ -213,7 +220,7 @@
 
 .mobile-menu-phone__link {
   @include font(500, 34px, calc(39.84 / 34), 0.02em);
-  color: var(--color-primary-middle);
+  color: var(--color-accent);
   text-decoration: none;
   cursor: pointer;
 
@@ -221,7 +228,7 @@
 
   &:hover,
   &:focus {
-    color: var(--color-accent);
+    color: var(--color-primary-middle);
   }
 }
 
@@ -261,12 +268,5 @@
   @include font(500, 18px, calc(22 / 18), 0.02em);
   text-decoration: none;
   cursor: pointer;
-  color: var(--color-primary-dark);
-
-  transition: color var(--t-duration) var(--t-transition);
-
-  &:hover,
-  &:focus {
-    color: var(--color-accent);
-  }
+  color: var(--color-accent);
 }

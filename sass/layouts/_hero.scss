@@ -1,5 +1,5 @@
-.hero__container {
-  padding: 118px 60px;
+.hero {
+  padding: 118px 0;
   background-color: #c4c4c4;
   background-repeat: no-repeat;
   background-position: center;
@@ -71,9 +71,13 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
-  padding: 10px 32px;
+  padding: 10px 24px;
   display: block;
   margin: 0 auto;
+
+  @include desktop {
+    padding: 10px 32px;
+  }
 
   transition: background-color var(--t-duration) var(--t-transition);
 
